@@ -24,7 +24,7 @@ jobs:
         run: chmod +x gradlew
       
       - name: Build with Gradle (skip tests)
-        run: ./gradlew build -x test --stacktrace
+        run: ./gradlew :AreaShop:build -x test
       
       - name: Upload JAR artifacts
         uses: actions/upload-artifact@v4
